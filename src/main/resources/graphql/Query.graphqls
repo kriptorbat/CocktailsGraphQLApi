@@ -1,0 +1,5 @@
+type Query {
+    getAllCocktails: [Cocktail]
+    getCocktailById(id: ID!): Cocktail
+    searchCocktailsByTag(tag: String!): [Cocktail]
+}
