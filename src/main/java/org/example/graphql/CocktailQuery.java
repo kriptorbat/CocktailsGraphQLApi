@@ -20,8 +20,4 @@ public class CocktailQuery implements GraphQLQueryResolver {
     public Cocktail getCocktailById(Long id) {
         return cocktailRepository.findById(id).orElse(null);
     }
-
-    public List<Cocktail> searchCocktailsByTag(String tag) {
-        return cocktailRepository.findByTagsContaining(tag);
-    }
 }
