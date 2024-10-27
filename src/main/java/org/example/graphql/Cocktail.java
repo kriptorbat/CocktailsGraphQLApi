@@ -15,16 +15,16 @@ public class Cocktail {
     @Column(name = "image_url")
     private String imageUrl;
     private String uuid;
-    @ElementCollection
+
     @Column(columnDefinition = "json")
-    private List<String> ingredients = new ArrayList<>();
-    @ElementCollection
+    private String ingredients;
+
     @Column(columnDefinition = "json")
-    private List<String> steps = new ArrayList<>();
-    @ElementCollection
+    private String steps;
+
     @Column(columnDefinition = "json")
-    private List<String> tags = new ArrayList<>();
-    @ElementCollection
+    private String tags;
+
     @Column(columnDefinition = "json")
-    private List<String> tools = new ArrayList<>();
+    private String tools;
 }

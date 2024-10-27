@@ -3,8 +3,8 @@ type Cocktail {
     name: String!
     imageUrl: String
     uuid: String!
-    ingredients: [String]
-    steps: [String]
-    tags: [String]
-    tools: [String]
+    ingredients: String
+    steps: String
+    tags: String
+    tools: String
 }
